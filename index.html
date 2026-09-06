@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEDUC - Soluções em Segurança do trabalho </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  href="img/vetor/leduc_icone_fundo_transparente.svg">
+    <script src="script.js" defer></script>
+    <script src="orcamento.js" defer></script>
+    <script src="transicoes.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a class="navbar-logo" href="#inicio">
+            <img src="img/vetor/leduc_logo_sem_fundo_preto.svg" alt="LEDUC">
+        </a>
+
+        <nav class="navbar-nav" aria-label="Navegação principal">
+            <a class="ativo" href="#inicio">Início</a>
+            <div class="navbar-dropdown">
+                <a href="#servicos">Serviços</a>
+                <div class="navbar-submenu">
+                    <a href="servicos.html">Ver todos os serviços <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="navbar-dropdown">
+                <a href="#treinamentos">Treinamentos</a>
+                <div class="navbar-submenu">
+                    <a href="treinamentos.html">Ver todos os treinamentos <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <a href="#galeria">Galeria</a>
+            <a href="#contato">Contato</a>
+            <a class="navbar-orcamento navbar-orcamento-mobile" href="#contato">Solicitar Orçamento <span aria-hidden="true">→</span></a>
+        </nav>
+
+        <a class="navbar-orcamento" href="#contato">
+            Solicitar Orçamento <span aria-hidden="true">→</span>
+        </a>
+    </header>
+
+   <section id="inicio">
+    <p class="inicio-chamada">
+        PREVENIR HOJE.<br>
+        CONSTRUIR AMANHÃ.
+    </p>
+
+    <h1>
+        Segurança do Trabalho<br>
+        <span>com resultados reais.</span>
+    </h1>
+
+    <p class="inicio-descricao">
+        Consultoria, treinamentos e documentação técnica para empresas que
+        precisam proteger equipes, cumprir normas e construir um ambiente
+        de trabalho mais seguro.
+    </p>
+
+    <a class="inicio-botao" href="#contato">
+        Solicitar Orçamento <span>→</span>
+    </a>
+
+    <div class="inicio-beneficios">
+        <div class="beneficio">
+            <img src="img/vetor/escudo.svg" alt="">
+            <p>Conformidade<br>com as normas</p>
+        </div>
+
+        <div class="beneficio">
+            <img src="img/vetor/equipe.svg" alt="">
+            <p>Equipes<br>mais seguras</p>
+        </div>
+
+        <div class="beneficio">
+            <img src="img/vetor/grafico.svg" alt="">
+            <p>Produtividade<br>com sustentabilidade</p>
+        </div>
+    </div>
+</section>
+
+    <section id="servicos">
+        <div class="servicos-cabecalho">
+            <div class="servicos-titulo">
+                <span class="linha-titulo" aria-hidden="true"></span>
+                <h2>Nossos <span>Serviços</span></h2>
+            </div>
+
+            <p>Soluções completas para atender às necessidades da sua empresa<br>em Segurança do Trabalho.</p>
+
+            <a class="ver-servicos" href="servicos.html">Ver todos os serviços <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="servicos-grade">
+            <article class="servico-card" data-servico="PGR">
+                <img src="img/servicos/pgr.png" alt="Ilustração de prancheta para PGR">
+                <h3>PGR</h3>
+                <p>Identificação, avaliação e controle dos riscos ocupacionais presentes no ambiente de trabalho.</p>
+                <div class="servico-detalhes">
+                    <div><strong>Normas aplicáveis</strong><p>NR-01 (GRO/PGR) e as demais NRs relacionadas aos riscos identificados.</p></div>
+                    <div><strong>Por que regularizar?</strong><p>Em fiscalização, o descumprimento pode gerar autuação e multa conforme a NR-28. Risco grave pode resultar em embargo ou interdição.</p></div>
+                    <a href="#contato">Solicitar orçamento</a>
+                </div>
+                <button class="servico-detalhe" type="button" aria-label="Ver detalhes do PGR" aria-expanded="false">→</button>
+            </article>
+
+            <article class="servico-card" data-servico="GRO">
+                <img src="img/servicos/gro.png" alt="Ilustração de engrenagem para GRO">
+                <h3>GRO</h3>
+                <p>Gerenciamento contínuo dos riscos ocupacionais para promover um ambiente de trabalho mais seguro.</p>
+                <div class="servico-detalhes">
+                    <div><strong>Normas aplicáveis</strong><p>NR-01, com identificação de perigos, avaliação de riscos, medidas de prevenção e acompanhamento.</p></div>
+                    <div><strong>Por que regularizar?</strong><p>A ausência de gestão de riscos deixa a empresa exposta a autuações e às penalidades previstas na NR-28.</p></div>
+                    <a href="#contato">Solicitar orçamento</a>
+                </div>
+                <button class="servico-detalhe" type="button" aria-label="Ver detalhes do GRO" aria-expanded="false">→</button>
+            </article>
+
+            <article class="servico-card" data-servico="AVCB">
+                <img src="img/servicos/avcb.png" alt="Ilustração de extintor para AVCB">
+                <h3>AVCB</h3>
+                <p>Apoio na adequação da empresa às exigências de segurança contra incêndio e obtenção do AVCB.</p>
+                <div class="servico-detalhes">
+                    <div><strong>Normas aplicáveis</strong><p>NR-23, legislação estadual e instruções técnicas do Corpo de Bombeiros competente.</p></div>
+                    <div><strong>Por que regularizar?</strong><p>Irregularidades podem comprometer o licenciamento, gerar autuações locais e aumentar a exposição a riscos de incêndio.</p></div>
+                    <a href="#contato">Solicitar orçamento</a>
+                </div>
+                <button class="servico-detalhe" type="button" aria-label="Ver detalhes do AVCB" aria-expanded="false">→</button>
+            </article>
+
+            <article class="servico-card" data-servico="Laudo Ergonômico">
+                <img src="img/servicos/laudo-ergonomico.png" alt="Ilustração de cadeira ergonômica">
+                <h3>Laudo Ergonômico</h3>
+                <p>Avaliação das condições de trabalho para identificar riscos ergonômicos e melhorar a saúde e o conforto dos colaboradores.</p>
+                <div class="servico-detalhes">
+                    <div><strong>Normas aplicáveis</strong><p>NR-17; conforme o caso, a empresa deve realizar Análise Ergonômica do Trabalho (AET).</p></div>
+                    <div><strong>Por que regularizar?</strong><p>Inadequações ergonômicas podem gerar autuação, multas conforme NR-28 e impactos à saúde dos trabalhadores.</p></div>
+                    <a href="#contato">Solicitar orçamento</a>
+                </div>
+                <button class="servico-detalhe" type="button" aria-label="Ver detalhes do Laudo Ergonômico" aria-expanded="false">→</button>
+            </article>
+
+            <article class="servico-card" data-servico="Gestão de Terceiros">
+                <img src="img/servicos/gestao-terceiros.png" alt="Ilustração de profissionais usando capacetes">
+                <h3>Gestão de Terceiros</h3>
+                <p>Controle de documentos, treinamentos e requisitos de segurança para empresas e profissionais terceirizados.</p>
+                <div class="servico-detalhes">
+                    <div><strong>Normas aplicáveis</strong><p>NR-01 e NRs específicas das atividades contratadas, além de requisitos documentais e operacionais aplicáveis.</p></div>
+                    <div><strong>Por que regularizar?</strong><p>Falhas no controle de terceiros aumentam o risco de acidentes, não conformidades e autuações em fiscalização.</p></div>
+                    <a href="#contato">Solicitar orçamento</a>
+                </div>
+                <button class="servico-detalhe" type="button" aria-label="Ver detalhes da Gestão de Terceiros" aria-expanded="false">→</button>
+            </article>
+        </div>
+    </section>
+
+<section id="treinamentos">
+    <div class="treinamentos-cabecalho">
+        <div class="treinamentos-titulo">
+            <span class="linha-titulo" aria-hidden="true"></span>
+            <h2>Nossos <span>Treinamentos</span></h2>
+        </div>
+
+        <p>Capacitação prática para equipes mais preparadas e um ambiente de trabalho mais seguro.</p>
+
+        <a class="ver-treinamentos" href="treinamentos.html">Ver todos os treinamentos <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="treinamentos-grade">
+        <article class="treinamento-card">
+            <img src="img/treinamentos/cipa.png" alt="Capacete de segurança verde para treinamento CIPA">
+            <h3>CIPA</h3>
+            <p>Treinamento para capacitar membros da CIPA na prevenção de acidentes e promoção da segurança no trabalho.</p>
+            <div class="treinamento-detalhes">
+                <div><strong>O que a equipe aprende</strong><p>Prevenção de acidentes, identificação de riscos e atuação dos representantes da CIPA.</p></div>
+                <div><strong>Referência</strong><p>Conteúdo alinhado às responsabilidades previstas na NR-05, conforme a realidade da empresa.</p></div>
+                <a href="#contato">Solicitar orçamento</a>
+            </div>
+            <button class="treinamento-detalhe" type="button" aria-label="Ver detalhes do treinamento CIPA" aria-expanded="false">→</button>
+        </article>
+
+        <article class="treinamento-card">
+            <img src="img/treinamentos/brigada-incendio.png" alt="Bombeiro em treinamento de brigada de incêndio">
+            <h3>Brigada de Incêndio</h3>
+            <p>Capacitação prática para prevenção, combate inicial a incêndios e atuação em situações de emergência.</p>
+            <div class="treinamento-detalhes">
+                <div><strong>O que a equipe aprende</strong><p>Prevenção, uso inicial de equipamentos, abandono de área e resposta organizada a emergências.</p></div>
+                <div><strong>Referência</strong><p>Treinamento orientado pela NR-23 e pelas exigências aplicáveis do Corpo de Bombeiros local.</p></div>
+                <a href="#contato">Solicitar orçamento</a>
+            </div>
+            <button class="treinamento-detalhe" type="button" aria-label="Ver detalhes de Brigada de Incêndio" aria-expanded="false">→</button>
+        </article>
+
+        <article class="treinamento-card">
+            <img src="img/treinamentos/primeiros-socorros.png" alt="Kit de primeiros socorros">
+            <h3>Primeiros Socorros</h3>
+            <p>Treinamento para atendimento inicial em acidentes e emergências até a chegada do atendimento especializado.</p>
+            <div class="treinamento-detalhes">
+                <div><strong>O que a equipe aprende</strong><p>Procedimentos iniciais de atendimento, acionamento de emergência e condutas seguras até o suporte especializado.</p></div>
+                <div><strong>Formato</strong><p>Conteúdo prático adaptado aos riscos e às rotinas do ambiente de trabalho.</p></div>
+                <a href="#contato">Solicitar orçamento</a>
+            </div>
+            <button class="treinamento-detalhe" type="button" aria-label="Ver detalhes de Primeiros Socorros" aria-expanded="false">→</button>
+        </article>
+
+        <article class="treinamento-card">
+            <img src="img/treinamentos/trabalho-altura.png" alt="Profissional em treinamento de trabalho em altura">
+            <h3>Trabalho em Altura</h3>
+            <p>Capacitação para execução segura de atividades em altura, com foco na prevenção de quedas e acidentes.</p>
+            <div class="treinamento-detalhes">
+                <div><strong>O que a equipe aprende</strong><p>Planejamento, análise de risco, sistemas de proteção e condutas seguras em atividades acima do nível inferior.</p></div>
+                <div><strong>Referência</strong><p>Capacitação estruturada conforme os requisitos aplicáveis da NR-35.</p></div>
+                <a href="#contato">Solicitar orçamento</a>
+            </div>
+            <button class="treinamento-detalhe" type="button" aria-label="Ver detalhes de Trabalho em Altura" aria-expanded="false">→</button>
+        </article>
+
+        <article class="treinamento-card">
+            <img src="img/treinamentos/espaco-confinado.png" alt="Profissional em espaço confinado">
+            <h3>Espaço Confinado</h3>
+            <p>Treinamento para entrada, permanência e trabalho seguro em ambientes com acesso restrito e riscos específicos.</p>
+            <div class="treinamento-detalhes">
+                <div><strong>O que a equipe aprende</strong><p>Reconhecimento de perigos, procedimentos de entrada, comunicação, monitoramento e resposta a emergências.</p></div>
+                <div><strong>Referência</strong><p>Capacitação elaborada conforme os requisitos aplicáveis da NR-33.</p></div>
+                <a href="#contato">Solicitar orçamento</a>
+            </div>
+            <button class="treinamento-detalhe" type="button" aria-label="Ver detalhes de Espaço Confinado" aria-expanded="false">→</button>
+        </article>
+
+        <article class="treinamento-card">
+            <img src="img/treinamentos/palestras-seguranca.png" alt="Palestra de segurança do trabalho">
+            <h3>Palestras de Segurança</h3>
+            <p>Conteúdos personalizados para conscientizar equipes e fortalecer a cultura de prevenção dentro da empresa.</p>
+            <div class="treinamento-detalhes">
+                <div><strong>O que a equipe aprende</strong><p>Boas práticas e conscientização sobre os riscos mais relevantes da operação e da rotina da empresa.</p></div>
+                <div><strong>Formato</strong><p>Palestras personalizadas para campanhas, integração de equipes e ações internas de prevenção.</p></div>
+                <a href="#contato">Solicitar orçamento</a>
+            </div>
+            <button class="treinamento-detalhe" type="button" aria-label="Ver detalhes de Palestras de Segurança" aria-expanded="false">→</button>
+        </article>
+    </div>
+</section>
+
+<section id="galeria">
+    <div class="galeria-intro">
+        <div class="galeria-titulo">
+            <span class="linha-titulo" aria-hidden="true"></span>
+            <h2>Galeria</h2>
+        </div>
+        <p>Conheça alguns dos nossos treinamentos, inspeções e serviços realizados.</p>
+        <a class="galeria-abrir" href="galeria.html">Ver galeria completa <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="galeria-carrossel" aria-label="Galeria de imagens">
+        <button class="galeria-controle galeria-anterior" type="button" aria-label="Imagem anterior">←</button>
+        <div class="galeria-fotos">
+            <img class="galeria-foto" src="img/galeria/galeria-01.png" alt="Treinamento de combate a incêndio">
+            <img class="galeria-foto" src="img/galeria/galeria-02.png" alt="Equipamentos de segurança do trabalho">
+            <img class="galeria-foto" src="img/galeria/galeria-03.png" alt="Treinamento prático de segurança">
+            <img class="galeria-foto" src="img/galeria/galeria-04.png" alt="Palestra de segurança do trabalho">
+        </div>
+        <button class="galeria-controle galeria-proxima" type="button" aria-label="Próxima imagem">→</button>
+    </div>
+
+    <p class="galeria-frase">Segurança em cada detalhe.</p>
+</section>
+<section id="contato">
+    <div class="contato-chamada">
+        <h2>Vamos <span>conversar?</span></h2>
+        <p>Solicite um orçamento ou tire suas dúvidas com a nossa equipe.</p>
+        <a class="botao-whatsapp" href="https://wa.me/" target="_blank" rel="noopener">
+            <svg class="whatsapp-icone" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/>
+                <path d="M9.1 7.9c.2-.5.5-.5.7-.5h.6c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c.5 1 1.2 1.7 2.2 2.2l.7-.6c.2-.2.5-.2.7-.1l1.8.8c.3.1.4.3.4.5v.6c0 .3-.1.6-.5.7-.5.2-1.4.3-2.8-.3-1.1-.5-2.3-1.5-3.2-2.5-.9-1-1.6-2.1-2-3.2-.5-1.4-.3-2.3-.1-2.8Z"/>
+            </svg>
+            Falar no WhatsApp <b aria-hidden="true">→</b>
+        </a>
+    </div>
+
+    <div class="contato-beneficios">
+        <div>
+            <img src="img/vetor/escudo.svg" alt="">
+            <p>Atendimento rápido<br>e personalizado</p>
+        </div>
+        <div>
+            <img src="img/vetor/grafico.svg" alt="">
+            <p>Seu negócio<br>mais seguro</p>
+        </div>
+        <div>
+            <img src="img/vetor/equipe.svg" alt="">
+            <p>Conte com<br>especialistas</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <a class="footer-logo" href="#inicio">
+        <img src="img/vetor/leduc_logo_sem_fundo_preto.svg" alt="LEDUC">
+    </a>
+
+    <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#treinamentos">Treinamentos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="footer-sociais">
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+    </div>
+
+    <p>Prevenir hoje.<br>Construir o amanhã.</p>
+</footer>
+
+<div class="servico-modal" id="servico-modal" aria-hidden="true">
+    <div class="modal-painel" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <button class="modal-fechar" type="button" aria-label="Fechar detalhes">×</button>
+        <img class="modal-imagem" src="" alt="">
+        <div class="modal-conteudo">
+            <h2 id="modal-titulo"></h2>
+            <p class="modal-resumo"></p>
+            <div class="modal-detalhes"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

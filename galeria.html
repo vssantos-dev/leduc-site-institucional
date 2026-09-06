@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | LEDUC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/vetor/leduc_icone_fundo_transparente.svg">
+    <script src="orcamento.js" defer></script>
+    <script src="transicoes.js" defer></script>
+    <script src="galeria.js" defer></script>
+</head>
+<body class="pagina-galeria">
+    <header class="navbar">
+        <a class="navbar-logo" href="index.html#inicio">
+            <img src="img/vetor/leduc_logo_sem_fundo_preto.svg" alt="LEDUC">
+        </a>
+
+        <nav class="navbar-nav" aria-label="Navegação principal">
+            <a href="index.html#inicio">Início</a>
+            <div class="navbar-dropdown">
+                <a href="index.html#servicos">Serviços</a>
+                <div class="navbar-submenu">
+                    <a href="servicos.html">Ver todos os serviços <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="navbar-dropdown">
+                <a href="index.html#treinamentos">Treinamentos</a>
+                <div class="navbar-submenu">
+                    <a href="treinamentos.html">Ver todos os treinamentos <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <a class="ativo" href="galeria.html">Galeria</a>
+            <a href="index.html#contato">Contato</a>
+            <a class="navbar-orcamento navbar-orcamento-mobile" href="index.html#contato">Solicitar Orçamento <span aria-hidden="true">→</span></a>
+        </nav>
+
+        <a class="navbar-orcamento" href="index.html#contato">Solicitar Orçamento <span aria-hidden="true">→</span></a>
+    </header>
+
+    <main id="catalogo-galeria">
+        <div class="catalogo-cabecalho galeria-pagina-cabecalho">
+            <div>
+                <span class="linha-titulo" aria-hidden="true"></span>
+                <h1>Nossa <span>Galeria</span></h1>
+            </div>
+            <p>Registros de treinamentos, inspeções e ações que ajudam empresas a construírem ambientes de trabalho mais seguros.</p>
+        </div>
+
+        <div class="catalogo-galeria-grade">
+            <!-- Para adicionar uma foto, copie um figure, troque imagem, título e descrição. -->
+            <figure class="catalogo-galeria-item" tabindex="0" role="button" data-titulo="Treinamento de combate a incêndio" data-descricao="Capacitação prática para preparar a equipe para agir com segurança, rapidez e organização em situações de princípio de incêndio.">
+                <img src="img/galeria/galeria-01.png" alt="Treinamento de combate a incêndio">
+                <figcaption>Treinamento de combate a incêndio</figcaption>
+            </figure>
+
+            <figure class="catalogo-galeria-item" tabindex="0" role="button" data-titulo="Segurança em cada detalhe" data-descricao="Cada equipamento e procedimento faz parte de uma cultura de prevenção construída junto com a equipe.">
+                <img src="img/galeria/galeria-02.png" alt="Capacete de segurança LEDUC">
+                <figcaption>Segurança em cada detalhe</figcaption>
+            </figure>
+
+            <figure class="catalogo-galeria-item" tabindex="0" role="button" data-titulo="Equipes preparadas" data-descricao="Treinamentos que conectam conhecimento técnico à rotina de quem faz a segurança acontecer todos os dias.">
+                <img src="img/galeria/galeria-03.png" alt="Equipe em atividade de segurança do trabalho">
+                <figcaption>Equipes preparadas</figcaption>
+            </figure>
+
+            <figure class="catalogo-galeria-item" tabindex="0" role="button" data-titulo="Inspeções e prevenção" data-descricao="Acompanhamento atento das condições de trabalho para identificar riscos e manter a operação mais segura.">
+                <img src="img/galeria/galeria-04.png" alt="Profissional em inspeção de segurança">
+                <figcaption>Inspeções e prevenção</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <div class="publicacao-modal" id="publicacao-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="publicacao-titulo">
+        <button class="publicacao-modal-anterior" type="button" aria-label="Ver imagem anterior">←</button>
+        <div class="publicacao-modal-painel">
+            <button class="publicacao-modal-fechar" type="button" aria-label="Fechar visualização">×</button>
+            <div class="publicacao-modal-imagem">
+                <img src="" alt="">
+            </div>
+            <article class="publicacao-modal-conteudo">
+                <div class="publicacao-modal-texto">
+                    <h2 id="publicacao-titulo"></h2>
+                    <p></p>
+                </div>
+            </article>
+        </div>
+        <button class="publicacao-modal-proxima" type="button" aria-label="Ver próxima imagem">→</button>
+    </div>
+</body>
+</html>
