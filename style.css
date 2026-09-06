@@ -2031,7 +2031,7 @@ body.modal-aberto {
 }
 
 .navbar-menu-mobile,
-.navbar .navbar-orcamento-mobile {
+.navbar .navbar-nav > a.navbar-orcamento-mobile {
     display: none;
 }
 
@@ -2156,7 +2156,7 @@ body.modal-aberto {
         background: transparent;
     }
 
-    .navbar .navbar-orcamento-mobile {
+    .navbar .navbar-nav > a.navbar-orcamento-mobile {
         display: flex;
         flex: 0 0 auto;
         width: 100%;
