@@ -2030,7 +2030,8 @@ body.modal-aberto {
     }
 }
 
-.navbar-menu-mobile {
+.navbar-menu-mobile,
+.navbar .navbar-orcamento-mobile {
     display: none;
 }
 
