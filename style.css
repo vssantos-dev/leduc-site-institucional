@@ -332,12 +332,24 @@ body.transicao-saida {
     }
 
     #inicio .inicio-beneficios {
-        flex-wrap: wrap;
-        gap: 14px;
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 0;
     }
 
     #inicio .beneficio {
-        padding-right: 14px;
+        flex: 1 1 0;
+        gap: 6px;
+        padding-right: 8px;
+    }
+
+    #inicio .beneficio img {
+        width: 21px;
+        height: 21px;
+    }
+
+    #inicio .beneficio p {
+        font-size: 0.56rem;
     }
 }
 
