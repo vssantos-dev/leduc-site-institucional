@@ -84,6 +84,10 @@ const linksInternos = document.querySelectorAll('a[href^="#"]');
 
 linksInternos.forEach((link) => {
     link.addEventListener('click', (evento) => {
+        if (link.matches('.navbar-orcamento, .inicio-botao, .modal-detalhes a')) {
+            return;
+        }
+
         const destino = document.querySelector(link.getAttribute('href'));
 
         if (!destino) return;
